@@ -69,7 +69,7 @@ You can follow [PATNet](https://github.com/slei109/PATNet) to prepare the source
 * **Base model trained in original [SSP](https://github.com/fanq15/SSP):** Ori_SSP_trained_on_VOC.pth([Google drive](https://drive.google.com/file/d/1Cqqsqy1ojc-CbI7y2in--JFa2e1CCN61/view?usp=drive_link)||[Baidu Netdisk](https://pan.baidu.com/s/1kcSekjSAa1KYyK7gzrPDAw?pwd=b2nt))
 
 
-Please place the Ori_SSP_trained_on_VOC.pth, trained in [SSP](https://github.com/fanq15/SSP), under the directory ./outdir/models/, and put the resnet50.pth under ./outdir/models/pretrained/.
+Please place the "Ori_SSP_trained_on_VOC.pth", trained in [SSP](https://github.com/fanq15/SSP), under the directory "./outdir/models/", and put the "resnet50.pth" under "./outdir/models/pretrained/".
 
 ### File Organization
 
@@ -99,23 +99,6 @@ Please place the Ori_SSP_trained_on_VOC.pth, trained in [SSP](https://github.com
            │    └── ISIC/                # ISIC benchmark
            └── deepglobe
                 └── Deepglobe/            # deepglobe benchmark
-```
-
-## Requirements
-
-- Python 3.7
-- PyTorch 1.5.1
-- cuda 10.1
-- tensorboard 1.14
-
-Conda environment settings:
-```bash
-conda create -n patnet python=3.7
-conda activate patnet
-
-conda install pytorch=1.5.1 torchvision cudatoolkit=10.1 -c pytorch
-conda install -c conda-forge tensorflow
-pip install tensorboardX
 ```
 
 ## Run the code
