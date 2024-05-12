@@ -112,7 +112,7 @@ Please place the "Ori_SSP_trained_on_VOC.pth", trained in [SSP](https://github.c
 >                 --logpath "your_experiment_name"
 > ```
 
-## Testing
+### Testing
 > ```bash
 > python test.py --test_datapath {./data/fss, ./data/chest, ./data/ISIC, ./data/deepglobe}
 >                --benchmark {fss,lung,isic,deepglobe}
