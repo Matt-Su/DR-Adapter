@@ -75,7 +75,7 @@ class SSP_MatchingNet(nn.Module):
         for idx, layer in enumerate(self.layer_block):
             s_0 = layer(s_0)
             q_0 = layer(q_0)
-
+            ## domain rectifying 
             if idx in self.perturb_layers:
                 x_q_mean = q_0.mean(dim=(2, 3), keepdim=True).detach()
                 x_s_mean = s_0.mean(dim=(2, 3), keepdim=True).detach()
